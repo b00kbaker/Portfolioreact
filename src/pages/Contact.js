@@ -7,11 +7,10 @@ const Contact = () => {
         <Container fluid>
         <Navbar />
         <div className="container font" id="lgFont">
-        <p className="left">View code at my
-           <a href="https://github.com/b00kbaker">Github</a> account
+        <p className="left">View code at my Github account: https://github.com/b00kbaker
         </p>
         <p className="left">Contact me via
-          <a href="caimmurphy@gmail.com">email</a>
+          email: caimmurphy@gmail.com
        </p>
         <p className="left">Learn more about my career history at
         <a href="https://www.linkedin.com/in/caitlin-murphy-080797194/">LinkedIn</a> 
