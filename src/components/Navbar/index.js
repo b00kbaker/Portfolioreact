@@ -1,34 +1,32 @@
 import React from "react";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from "react-bootstrap/Container";
+import { HashRouter as Link } from "react-router-dom";
 
 
-function Navbar(){
+function navbar() {
   return (
- <nav className="navbar navbar-expand-lg navbar-light bg-light font">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">Caitlin Murphy</a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link" href="index.html">Home</a>
-              <a className="nav-link"  href="portfolio.html">Portfolio</a>
+    <Container fluid>
+   <h2>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand>Caitlin Murphy</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="mr-auto">
+      <Nav.Link><Link to="/">Home</Link></Nav.Link>
+      <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
+      <Nav.Link><Link to="/portfolio">Portfolio</Link></Nav.Link>
+       </Nav>
+      </Navbar.Collapse>
+      </Navbar>
+      </h2>
 
-              {/* Active link component? */}
-              <a className="nav-link active" aria-current="page" href="contact.html">Contact Info</a>
-            </div>
-          </div>
-        </div>
- </nav>
+
+
+      </Container>
   );
-};  
+}
 
-export default Navbar;
+
+export default navbar;

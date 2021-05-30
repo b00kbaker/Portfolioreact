@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Container from "react-bootstrap/Container";
 
 
 const Contact = () => {
     return (
+        <div>
         <Container fluid>
-        <Navbar />
         <div className="container font" id="lgFont">
         <p className="left">View code at my Github account: https://github.com/b00kbaker
         </p>
@@ -20,7 +20,9 @@ const Contact = () => {
        </p>
          
       </div>
-     </Container>
+
+    </Container>
+      </div>
 
     );
 };

@@ -1,20 +1,15 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Container from "react-bootstrap/Container";
 import Project from "../components/Project";
 
 const Portfolio = () => {
     return (
+        <div>
         <Container fluid>
-        <Navbar />
         {/* Need to pass props to individualize Project blocks */}
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        
      </Container>
-
+    </div>
     );
 };
 

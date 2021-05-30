@@ -1,22 +1,23 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Container from "react-bootstrap/Container";
 import Header from "../components/Header";
 
 const Home = () => {
     return (
+      <div>
  <Container fluid>
-  <Navbar />
+ 
 
- <div class="container-fluid-font">
+ <div className="container-fluid-font">
     <Header />
-    <div class="row">
-         <img src="CaitlinatWombatGarden.jpg" alt="Myself leaning on wombat garden statue" class="col-4" ></img>
-         <img src="Pinkdessert.jpg" alt="Pink plated dessert, black plate" class="col-4 hide" ></img>
-         <img src="blackscreencode-florian-olivo-unsplash.jpg" alt="Computer screen with black background and colorful code" class="col-4 hide" ></img>
+    <div className="row">
+         <img src="../images/CaitlinatWombatGarden.jpg" alt="Myself leaning on wombat garden statue" className="col-4" ></img>
+         <img src="../images/Pinkdessert.jpg" alt="Pink plated dessert, black plate" className="col-4 hide" ></img>
+         <img src="../blackscreencode-florian-olivo-unsplash.jpg" alt="Computer screen with black background and colorful code" className="col-4 hide" ></img>
        </div>
 
-       <section class="row"> 
-         <p class="col-12" id="indent">
+       <section className="row"> 
+         <p className="col-12" id="indent">
            Hi, my name is Caitlin Murphy and while I am new to the coding world I have dwelt in the realm of creation my whole
            life. My previous career was as a pastry cook at fine dining establishments creating dishes that were both
            pleasing to the eyes and taste buds. I loved every facet of the culinary lifestyle: the creative environment, 
@@ -29,6 +30,7 @@ const Home = () => {
        </section>
  </div>
  </Container>
+ </div>
 
  );
 
