@@ -1,80 +1,197 @@
 import React from "react";
-import Container from 'react-bootstrap/Container'
+import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
-var projectData=[
-  {
-    title:
-    image:
-    description:
-    githubLink:
-    otherLink:
-  },
+// var projectData = [
+//   {
+//     title: "Park Buddy 2.0",
+//     image: "../images/park2.0list.png",
+//     description:
+//       "Group project to provide National Park information for the user's current state based on their IP address.",
+//     githubLink: "https://brylara.github.io/Project1/",
+//     otherLink: "",
+//   },
 
-  {
-    title:
-    image:
-    description:
-    githubLink:
-    otherLink:
-  },
+//   {
+//     title: "Code Quiz",
+//     image: "../images/JSquizScreenshot.png",
+//     description: "A timed quiz built with vanilla Javascript",
+//     githubLink: "https://b00kbaker.github.io/basicJS-quiz/",
+//     otherLink: "",
+//   },
 
-  {
-    title:
-    image:
-    description:
-    githubLink:
-    otherLink:
-  },
+//   {
+//     title: "Loan Shark",
+//     image: "",
+//     description:
+//       "Group project utilizing React to create a student loan tracker complete with Authentication, database storage, and up-to-date chart graphics.",
+//     githubLink: "",
+//     otherLink: "",
+//   },
 
-  {
-    title:
-    image:
-    description:
-    githubLink:
-    otherLink:
-  },
+//   {
+//     title: "Password Generator",
+//     image: "../images/PasswordGen.png",
+//     description:
+//       "Once the user has answered a variety of questions regarding value type (uppercase, lowercase, length, etc) a unique one time password will be generated via Javascript functions.",
+//     githubLink: "https://github.com/b00kbaker/generate-new-pswrd.git",
+//     otherLink: "https://github.com/b00kbaker/generate-new-pswrd.git",
+//   },
 
-  {
-    title:
-    image:
-    description:
-    githubLink:
-    otherLink:
-  },
+//   {
+//     title: "Note Taker",
+//     image: "",
+//     description: "",
+//     githubLink: "",
+//     otherLink: "",
+//   },
 
-  {
-    title:
-    image:
-    description:
-    githubLink:
-    otherLink:
-  },
-];
+//   {
+//     title: "Blog Beginnings",
+//     image: "",
+//     description: "",
+//     githubLink: "",
+//     otherLink: "",
+//   },
+// ];
 
+const Project = (props) => {
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <Card style={{ width: "fluid" }}>
+            <Card.Img variant="top" src="../images/park2.0list.png" />
+            <Card.Body>
+              <Card.Title>Park Buddy 2.0</Card.Title>
+              <Card.Text>
+                Group project to provide National Park information for the
+                user's current state based on their IP address.
+              </Card.Text>
+              <Button
+                href="https://brylara.github.io/Project1/"
+                variant="outline-primary"
+              >
+                GitHub Repo
+              </Button>
+              {/* <Button href='https://shrouded-reaches-33204.herokuapp.com/' variant="outline-danger">View Live Application</Button> */}
+            </Card.Body>
+          </Card>
 
-function Project(){
-  return(
+          <Card style={{ width: "fluid" }}>
+            <Card.Img variant="top" src="../images/JSquizScreenshot.png" />
+            <Card.Body>
+              <Card.Title>Code quiz</Card.Title>
+              <Card.Text>A timed quiz built with vanilla Javascript</Card.Text>
+              <Button href="https://github.com/b00kbaker/basicJS-quiz.git">
+                GitHub Repo
+              </Button>
+              <Button href="https://b00kbaker.github.io/basicJS-quiz/">
+                Live Application
+              </Button>
+            </Card.Body>
+          </Card>
 
- <div className="container" id="folio-grid">
-      <div className="row">
-          <div className="card">
-            <img
+          <Card style={{ width: "fluid" }}>
+            <Card.Img variant="top" src="" />
+            <Card.Body>
+              <Card.Title>Loan Shark</Card.Title>
+              <Card.Text>
+                Group project utilizing React to create a student loan tracker
+                complete with Authentication, database storage, and up-to-date
+                chart graphics.
+              </Card.Text>
+              <Button
+                href=""
+                variant="outline-primary"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                href=""
+                variant="outline-danger"
+              >
+                Live Application
+              </Button>
+            </Card.Body>
+          </Card>
 
-            // Props (image/alt/title/href)
-              src="../images/ParkBuddyScreenShot02.21.png"
-              className="card-img-top"
-              alt="Background of Zion National Park sign with logo 'ParkBuddy' overlay"
+          <Card style={{ width: "fluid" }}>
+            <Card.Img
+              variant="top"
+              src="../images/PasswordGen.png"
             />
-            <div className="card-body">
-              <p className="card-text">Group Project: <a href="https://brylara.github.io/Project1/">ParkBuddy</a></p>
-            </div>
-          </div>  
-      </div>
- </div>     
+            <Card.Body>
+              <Card.Title>Password Generator</Card.Title>
+              <Card.Text>
+              Once the user has answered a variety of questions regarding value type (uppercase, lowercase, length, etc) a unique one time password will be generated via Javascript functions.
+              </Card.Text>
+              <Button
+                id="githubBtn"
+                href="https://github.com/b00kbaker/generate-new-pswrd.git"
+                variant="outline-primary"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                href="https://b00kbaker.github.io/generate-new-pswrd/"
+                variant="outline-danger"
+              >
+                Live Application
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card style={{ width: "fluid" }}>
+            <Card.Img variant="top" src="" />
+            <Card.Body>
+              <Card.Title>Note Taker</Card.Title>
+              <Card.Text>
+                Coming Soon
+              </Card.Text>
+              <Button
+                href=""
+                variant="outline-primary"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                href=""
+                variant="outline-danger"
+              >
+                Live Application
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card style={{ width: "fluid" }}>
+            <Card.Img variant="top" src="" />
+            <Card.Body>
+              <Card.Title>Blog Beginnings</Card.Title>
+              <Card.Text>
+                Coming Soon
+              </Card.Text>
+              <Button
+                href=""
+                variant="outline-primary"
+              >
+                GitHub Repo
+              </Button>
+              <Button
+                href=""
+                variant="outline-danger"
+              >
+                Live Application
+              </Button>
+            </Card.Body>
+          </Card>
+
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -7,7 +7,7 @@ const Portfolio = () => {
         <div>
         <Container fluid>
         {/* Need to pass props to individualize Project blocks */}
-        
+        <Project />
      </Container>
     </div>
     );
