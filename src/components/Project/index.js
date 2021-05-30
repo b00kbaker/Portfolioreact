@@ -4,67 +4,17 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import Buddy from "../../images/park2.0list.png";
+import Quiz from "../../images/JSquizScreenshot.png";
+import Password from "../../images/PasswordGen.png";
 
-// var projectData = [
-//   {
-//     title: "Park Buddy 2.0",
-//     image: "../images/park2.0list.png",
-//     description:
-//       "Group project to provide National Park information for the user's current state based on their IP address.",
-//     githubLink: "https://brylara.github.io/Project1/",
-//     otherLink: "",
-//   },
-
-//   {
-//     title: "Code Quiz",
-//     image: "../images/JSquizScreenshot.png",
-//     description: "A timed quiz built with vanilla Javascript",
-//     githubLink: "https://b00kbaker.github.io/basicJS-quiz/",
-//     otherLink: "",
-//   },
-
-//   {
-//     title: "Loan Shark",
-//     image: "",
-//     description:
-//       "Group project utilizing React to create a student loan tracker complete with Authentication, database storage, and up-to-date chart graphics.",
-//     githubLink: "",
-//     otherLink: "",
-//   },
-
-//   {
-//     title: "Password Generator",
-//     image: "../images/PasswordGen.png",
-//     description:
-//       "Once the user has answered a variety of questions regarding value type (uppercase, lowercase, length, etc) a unique one time password will be generated via Javascript functions.",
-//     githubLink: "https://github.com/b00kbaker/generate-new-pswrd.git",
-//     otherLink: "https://github.com/b00kbaker/generate-new-pswrd.git",
-//   },
-
-//   {
-//     title: "Note Taker",
-//     image: "",
-//     description: "",
-//     githubLink: "",
-//     otherLink: "",
-//   },
-
-//   {
-//     title: "Blog Beginnings",
-//     image: "",
-//     description: "",
-//     githubLink: "",
-//     otherLink: "",
-//   },
-// ];
-
-const Project = (props) => {
+const Project = () => {
   return (
     <Container>
       <Row>
         <Col>
           <Card style={{ width: "fluid" }}>
-            <Card.Img variant="top" src="../images/park2.0list.png" />
+            <Card.Img variant="top" src={ Buddy } />
             <Card.Body>
               <Card.Title>Park Buddy 2.0</Card.Title>
               <Card.Text>
@@ -72,21 +22,28 @@ const Project = (props) => {
                 user's current state based on their IP address.
               </Card.Text>
               <Button
-                href="https://brylara.github.io/Project1/"
-                variant="outline-primary"
-              >
-                GitHub Repo
+               variant="primary"
+               size="sm"
+               href="https://brylara.github.io/Project1/">
+                Live Application
               </Button>
-              {/* <Button href='https://shrouded-reaches-33204.herokuapp.com/' variant="outline-danger">View Live Application</Button> */}
+              {/* <Button
+                href=""
+                variant="outline-danger"
+              >
+                Live Application
+              </Button> */}
             </Card.Body>
           </Card>
 
           <Card style={{ width: "fluid" }}>
-            <Card.Img variant="top" src="../images/JSquizScreenshot.png" />
+            <Card.Img variant="top" src={ Quiz } />
             <Card.Body>
               <Card.Title>Code quiz</Card.Title>
               <Card.Text>A timed quiz built with vanilla Javascript</Card.Text>
-              <Button href="https://github.com/b00kbaker/basicJS-quiz.git">
+              <Button 
+              variant="success"
+              href="https://github.com/b00kbaker/basicJS-quiz.git">
                 GitHub Repo
               </Button>
               <Button href="https://b00kbaker.github.io/basicJS-quiz/">
@@ -122,7 +79,7 @@ const Project = (props) => {
           <Card style={{ width: "fluid" }}>
             <Card.Img
               variant="top"
-              src="../images/PasswordGen.png"
+              src={ Password }
             />
             <Card.Body>
               <Card.Title>Password Generator</Card.Title>
@@ -130,7 +87,6 @@ const Project = (props) => {
               Once the user has answered a variety of questions regarding value type (uppercase, lowercase, length, etc) a unique one time password will be generated via Javascript functions.
               </Card.Text>
               <Button
-                id="githubBtn"
                 href="https://github.com/b00kbaker/generate-new-pswrd.git"
                 variant="outline-primary"
               >

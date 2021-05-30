@@ -4,8 +4,9 @@ import Container from "react-bootstrap/Container";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Mynavbar from "./components/Navbarr";
+import Mynavbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import "../src/App.css";
 
 function App() {
   return(

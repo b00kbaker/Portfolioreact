@@ -5,7 +5,7 @@ function Header(){
 
  <header className="d-flex justify-content-center">
     {/* Only needed in Homepage */}
-    About Me
+    <h1>About Me</h1>
  </header>
     );
 };   

@@ -10,6 +10,7 @@ const Home = () => {
 
  <div className="container-fluid-font">
     <Header />
+    <h3>
     <div className="row">
          <img src="../images/CaitlinatWombatGarden.jpg" alt="Myself leaning on wombat garden statue" className="col-4" ></img>
          <img src="../images/Pinkdessert.jpg" alt="Pink plated dessert, black plate" className="col-4 hide" ></img>
@@ -28,6 +29,7 @@ const Home = () => {
            continue exploring this big beautiful world. 
            </p>
        </section>
+       </h3>
  </div>
  </Container>
  </div>
