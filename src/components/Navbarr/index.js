@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from "react-bootstrap/Container";
-import { HashRouter as Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
-function navbar() {
+function Mynavbar() {
   return (
     <Container fluid>
    <h2>
@@ -29,4 +29,4 @@ function navbar() {
 }
 
 
-export default navbar;
+export default Mynavbar;

@@ -4,14 +4,14 @@ import Container from "react-bootstrap/Container";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Navbar from "./components/Navbar";
+import Mynavbar from "./components/Navbarr";
 import Footer from "./components/Footer";
 
 function App() {
   return(
     <Container fluid>
     <Router>
-        <Navbar />
+        <Mynavbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/portfolio" component={Portfolio} />
