@@ -1,8 +1,13 @@
 import React from "react";
+import "../App.css";
+
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from 'react-bootstrap/Image'
 import Header from "../components/Header";
+
 import Garden from "../images/CaitlinatWombatGarden.jpg";
 import Dessert from "../images/Pinkdessert.jpg";
 import Bcode from "../images/blackscreencode-florian-olivo-unsplash.jpg";
@@ -10,17 +15,17 @@ import Bcode from "../images/blackscreencode-florian-olivo-unsplash.jpg";
 const Home = () => {
     return (
       <div>
- <Container>
+ <Container fluid= "md">
  
 
  <div>
     <Header />
     <h3>
-    <Row className="justify-content-md-center">
-      <Col md= "3" ><img src={ Garden } alt="Myself leaning on wombat garden statue" ></img></Col>
-      <Col md= "3"><img src={ Dessert } alt="Pink plated dessert, black plate"></img></Col>
-      <Col md= "3"><img src={ Bcode } alt="Computer screen with black background and colorful code" ></img></Col>
-       </Row>
+    <Row>
+     <Col xs={6} md={4}><Image className="photo" src={Garden} alt="Myself leaning on wombat garden statue" roundedCircle /></Col>
+     <Col xs={6} md={4}><Image src={Dessert}  alt="Pink plated dessert, black plate" roundedCircle /></Col>
+     <Col xs={6} md={4}><Image src={Bcode}  alt="Computer screen with black background and colorful code" roundedCircle /></Col>
+    </Row>
 
        <section className="row"> 
          <p className="col-12" id="indent">

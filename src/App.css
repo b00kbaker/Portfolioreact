@@ -37,5 +37,12 @@
       transform: rotate(360deg);
     }
   };
+
+  .photo {
+    height: 100px;
+    width: 100px;
+  
+  }
+  
   
   
