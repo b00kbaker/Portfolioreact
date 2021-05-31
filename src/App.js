@@ -10,17 +10,19 @@ import "../src/App.css";
 
 function App() {
   return(
-    <Container fluid>
+    
     <Router>
         <Mynavbar />
+        <Container fluid>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
+        </Container>
     </Router>
-    </Container>
+   
   );
 }
 

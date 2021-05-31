@@ -17,9 +17,9 @@ const Home = () => {
     <Header />
     <h3>
     <Row className="justify-content-md-center">
-      <Col md= "3" ><img src={ Garden } alt="Myself leaning on wombat garden statue" className="col-4" ></img></Col>
-      <Col md= "3"><img src={ Dessert } alt="Pink plated dessert, black plate" className="col-4 hide" ></img></Col>
-      <Col md= "3"><img src={ Bcode } alt="Computer screen with black background and colorful code" className="col-4 hide" ></img></Col>
+      <Col md= "3" ><img src={ Garden } alt="Myself leaning on wombat garden statue" ></img></Col>
+      <Col md= "3"><img src={ Dessert } alt="Pink plated dessert, black plate"></img></Col>
+      <Col md= "3"><img src={ Bcode } alt="Computer screen with black background and colorful code" ></img></Col>
        </Row>
 
        <section className="row"> 
