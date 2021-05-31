@@ -1,6 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Header from "../components/Header";
+import Garden from "../images/CaitlinatWombatGarden.jpg";
+import Dessert from "../images/Pinkdessert.jpg";
+import Bcode from "../images/blackscreencode-florian-olivo-unsplash.jpg";
 
 const Home = () => {
     return (
@@ -8,14 +13,14 @@ const Home = () => {
  <Container fluid>
  
 
- <div className="container-fluid-font">
+ <div>
     <Header />
     <h3>
-    <div className="row">
-         <img src="../images/CaitlinatWombatGarden.jpg" alt="Myself leaning on wombat garden statue" className="col-4" ></img>
-         <img src="../images/Pinkdessert.jpg" alt="Pink plated dessert, black plate" className="col-4 hide" ></img>
-         <img src="../blackscreencode-florian-olivo-unsplash.jpg" alt="Computer screen with black background and colorful code" className="col-4 hide" ></img>
-       </div>
+    <Row className="justify-content-md-center">
+      <Col md= "3" ><img src={ Garden } alt="Myself leaning on wombat garden statue" className="col-4" ></img></Col>
+      <Col md= "3"><img src={ Dessert } alt="Pink plated dessert, black plate" className="col-4 hide" ></img></Col>
+      <Col md= "3"><img src={ Bcode } alt="Computer screen with black background and colorful code" className="col-4 hide" ></img></Col>
+       </Row>
 
        <section className="row"> 
          <p className="col-12" id="indent">
