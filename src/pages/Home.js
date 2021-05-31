@@ -10,7 +10,7 @@ import Bcode from "../images/blackscreencode-florian-olivo-unsplash.jpg";
 const Home = () => {
     return (
       <div>
- <Container fluid>
+ <Container>
  
 
  <div>

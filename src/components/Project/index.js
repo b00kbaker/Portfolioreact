@@ -23,7 +23,6 @@ const Project = () => {
               </Card.Text>
               <Button
                variant="primary"
-               size="sm"
                href="https://brylara.github.io/Project1/">
                 Live Application
               </Button>
@@ -46,7 +45,9 @@ const Project = () => {
               href="https://github.com/b00kbaker/basicJS-quiz.git">
                 GitHub Repo
               </Button>
-              <Button href="https://b00kbaker.github.io/basicJS-quiz/">
+              <Button 
+              variant="primary"
+              href="https://b00kbaker.github.io/basicJS-quiz/">
                 Live Application
               </Button>
             </Card.Body>
@@ -63,13 +64,13 @@ const Project = () => {
               </Card.Text>
               <Button
                 href=""
-                variant="outline-primary"
+                variant="success"
               >
                 GitHub Repo
               </Button>
               <Button
                 href=""
-                variant="outline-danger"
+                variant="primary"
               >
                 Live Application
               </Button>
@@ -88,13 +89,13 @@ const Project = () => {
               </Card.Text>
               <Button
                 href="https://github.com/b00kbaker/generate-new-pswrd.git"
-                variant="outline-primary"
+                variant="success"
               >
                 GitHub Repo
               </Button>
               <Button
                 href="https://b00kbaker.github.io/generate-new-pswrd/"
-                variant="outline-danger"
+                variant="primary"
               >
                 Live Application
               </Button>
@@ -110,13 +111,13 @@ const Project = () => {
               </Card.Text>
               <Button
                 href=""
-                variant="outline-primary"
+                variant="success"
               >
                 GitHub Repo
               </Button>
               <Button
                 href=""
-                variant="outline-danger"
+                variant="primary"
               >
                 Live Application
               </Button>
@@ -132,13 +133,13 @@ const Project = () => {
               </Card.Text>
               <Button
                 href=""
-                variant="outline-primary"
+                variant="success"
               >
                 GitHub Repo
               </Button>
               <Button
                 href=""
-                variant="outline-danger"
+                variant="primary"
               >
                 Live Application
               </Button>

@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container">
         <span className="text-muted">
         <Button
-               variant="primary"
+               variant="dark"
                size="sm"
                href="https://www.linkedin.com/in/caitlin-murphy-080797194/">
                 Follow me on LinkedIn
